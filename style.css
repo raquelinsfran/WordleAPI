@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+  
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#game-description {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+   
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+   
+button:active {
+  transform: scale(0.95);
+}
+   
+.letter {
+    border: 1px solid black;
+    padding: 3px;
+    margin: 3px;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block
+}
+   
+.row {
+  /* Estilos para el contenedor de intentos */
+  display: flex; 
+  flex-direction: column; 
+}
+
+.row > * {
+  
+  margin: 5px 0; /* Espacio entre los elementos */
+}
+   
+.input-area{
+    margin: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  margin-top: 20px;
+}
+
+
+/* Estilos para los botones */
+#guess-button, #restart-button {
+  
+  margin: 0 10px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0CBABA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+#guess-button:hover, #restart-button:hover {
+  background-color: #088f8f;
+}
+
+button:active {
+  transform: scale(0.95);
+}

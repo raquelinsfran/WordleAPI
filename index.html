@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Wordle PPY</title>
+    <style>
+        #game-description {
+            font-family: 'Baloo', cursive;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wordle PPY</h1>
+    <div id="game-description">
+        Tu objetivo es adivinar una palabra de 5 letras.<br>
+        Escribe tu intento en el campo de abajo y presiona "Intentar".<br>
+        Las letras correctas se resaltarán en <span style="color: green;">verde,</span> las letras correctas en posición incorrecta se resaltarán en <span style="color: yellow;">amarillo,</span><br>
+        y las letras incorrectas estarán en <span style="color: gray;">gris.</span><br>
+        Tienes 6 intentos antes de perder el juego.<br>
+        ¡Buena suerte!
+    </div>    
+    <input type="text" id="guess-input" maxlength="5">
+    <div class="button-container"> 
+        <button id="guess-button">Intentar</button>
+        <button id="restart-button">Reiniciar</button>
+    </div>
+    <div id="guesses"></div>  
+    <div id="grid"></div>
+    <div id="div"></div>
+</body>
+</html>
